@@ -9,7 +9,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
 @Service
-@Profile("customerjpadao")
+@Profile("jpadao")
 public class CustomerServiceJpaDaoImpl implements CustomerService{
 
     private EntityManagerFactory entityManagerFactory;

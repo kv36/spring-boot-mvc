@@ -3,11 +3,13 @@ package kartheek.springframework.services;
 
 import kartheek.springframework.models.Customer;
 import kartheek.springframework.models.DomainObject;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.List;
 
 @Service
+@Profile("map")
 public class CustomerServiceImpl extends AbstractMapService implements CustomerService {
 
         @Override
