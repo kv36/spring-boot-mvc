@@ -1,8 +1,9 @@
-package kartheek.springframework.services;
+package kartheek.springframework.services.mapServices;
 
 
 import kartheek.springframework.models.Customer;
 import kartheek.springframework.models.DomainObject;
+import kartheek.springframework.services.CustomerService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import java.util.HashMap;
@@ -32,7 +33,6 @@ public class CustomerServiceImpl extends AbstractMapService implements CustomerS
             super.delete(id);
         }
 
-        @Override
         protected void loadDomainObjects() {
             domainMap = new HashMap<>();
 

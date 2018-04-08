@@ -26,6 +26,7 @@ public class CustomerServiceJpaIntegrationTest {
         this.customerService = customerService;
     }
 
+    @Ignore
     @Test
     public void testList() throws Exception {
         List<Customer> customers = (List<Customer>) customerService.listAll();

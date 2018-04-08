@@ -1,4 +1,4 @@
-package kartheek.springframework.services;
+package kartheek.springframework.services.mapServices;
 
 import kartheek.springframework.models.DomainObject;
 import java.util.*;
@@ -9,7 +9,6 @@ public abstract class AbstractMapService {
 
     public AbstractMapService() {
         domainMap = new HashMap<>();
-        loadDomainObjects();
     }
 
     public List<DomainObject> listAll() {
@@ -41,6 +40,4 @@ public abstract class AbstractMapService {
     private Integer getNextKey(){
         return Collections.max(domainMap.keySet()) + 1;
     }
-
-    protected abstract void loadDomainObjects();
 }

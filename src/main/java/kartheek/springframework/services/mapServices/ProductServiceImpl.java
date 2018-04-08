@@ -1,7 +1,8 @@
-package kartheek.springframework.services;
+package kartheek.springframework.services.mapServices;
 
 import kartheek.springframework.models.DomainObject;
 import kartheek.springframework.models.Product;
+import kartheek.springframework.services.ProductService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
